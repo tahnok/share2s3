@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Share2S3</string>
+    <string name="share_label">Upload to S3</string>
+    <string name="secret_not_set">Not set</string>
+    <string name="close">Close</string>
+    <string name="open_settings">Settings</string>
+
+    <!-- Settings -->
+    <string name="category_server">Server</string>
+    <string name="endpoint_title">Endpoint</string>
+    <string name="endpoint_hint">e.g. https://s3.example.com or http://192.168.1.2:3900</string>
+    <string name="region_title">Region</string>
+    <string name="bucket_title">Bucket</string>
+    <string name="access_key_title">Access key ID</string>
+    <string name="secret_key_title">Secret key</string>
+    <string name="path_style_title">Path-style URLs</string>
+    <string name="path_style_summary_on">https://endpoint/bucket/key (Garage default)</string>
+    <string name="path_style_summary_off">https://bucket.endpoint/key (requires root_domain in Garage)</string>
+    <string name="test_connection_title">Test connection</string>
+    <string name="test_connection_summary">Check that the bucket is reachable with these credentials</string>
+    <string name="test_ok">Connection OK</string>
+    <string name="test_ok_message">Bucket “%1$s” is reachable.</string>
+    <string name="test_failed">Connection failed</string>
+
+    <string name="category_uploads">Uploads</string>
+    <string name="key_template_title">Object key template</string>
+    <string name="key_template_dialog_message">Placeholders: {filename} {name} {ext} {random} {uuid} {date} {year} {month} {day} {timestamp}</string>
+    <string name="key_template_summary">%1$s\nExample: %2$s</string>
+
+    <string name="category_link">Link</string>
+    <string name="copy_to_clipboard_title">Copy link to clipboard</string>
+    <string name="copy_to_clipboard_summary">After uploading, put the file’s URL on the clipboard</string>
+    <string name="public_url_title">Public URL template</string>
+    <string name="public_url_dialog_message">Leave empty to use the S3 URL. Placeholders: {key} {bucket} {filename}\nExample: https://files.example.com/{key}</string>
+    <string name="public_url_default">S3 object URL</string>
+    <string name="public_url_summary">%1$s\nExample: %2$s</string>
+
+    <string name="category_about">About</string>
+    <string name="version_title">Version</string>
+
+    <!-- Share -->
+    <string name="uploading">Uploading…</string>
+    <string name="uploading_n_of_m">Uploading %1$d of %2$d…</string>
+    <string name="upload_progress">%1$s\n%2$s / %3$s</string>
+    <string name="upload_failed">Upload failed</string>
+    <string name="uploaded">Uploaded</string>
+    <string name="uploaded_and_copied">Uploaded — link copied</string>
+    <string name="clip_label">Uploaded file URL</string>
+    <string name="not_configured_title">Set up Share2S3 first</string>
+    <string name="nothing_to_upload">Nothing to upload was shared.</string>
+</resources>

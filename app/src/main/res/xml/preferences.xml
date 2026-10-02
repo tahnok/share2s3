@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/category_server">
+        <EditTextPreference
+            app:dialogMessage="@string/endpoint_hint"
+            app:key="endpoint"
+            app:title="@string/endpoint_title"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:defaultValue="garage"
+            app:key="region"
+            app:title="@string/region_title"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="bucket"
+            app:title="@string/bucket_title"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="access_key"
+            app:title="@string/access_key_title"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="secret_key"
+            app:title="@string/secret_key_title" />
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:key="path_style"
+            app:summaryOff="@string/path_style_summary_off"
+            app:summaryOn="@string/path_style_summary_on"
+            app:title="@string/path_style_title" />
+        <Preference
+            app:key="test_connection"
+            app:summary="@string/test_connection_summary"
+            app:title="@string/test_connection_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/category_uploads">
+        <EditTextPreference
+            app:defaultValue="{random}/{filename}"
+            app:dialogMessage="@string/key_template_dialog_message"
+            app:key="key_template"
+            app:title="@string/key_template_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/category_link">
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:key="copy_to_clipboard"
+            app:summary="@string/copy_to_clipboard_summary"
+            app:title="@string/copy_to_clipboard_title" />
+        <EditTextPreference
+            app:dialogMessage="@string/public_url_dialog_message"
+            app:key="public_url_template"
+            app:title="@string/public_url_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/category_about">
+        <Preference
+            app:key="version"
+            app:selectable="false"
+            app:title="@string/version_title" />
+    </PreferenceCategory>
+</PreferenceScreen>
