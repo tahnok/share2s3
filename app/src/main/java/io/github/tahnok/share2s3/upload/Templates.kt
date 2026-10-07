@@ -18,7 +18,7 @@ import kotlin.random.Random
 object KeyTemplate {
     const val DEFAULT = "{random}/{filename}"
 
-    private val PLACEHOLDER = Regex("\\{([a-z]+)}")
+    private val PLACEHOLDER = Regex("\\{([a-z]+)\\}")
     private const val ALPHABET = "abcdefghijklmnopqrstuvwxyz0123456789"
 
     fun render(
